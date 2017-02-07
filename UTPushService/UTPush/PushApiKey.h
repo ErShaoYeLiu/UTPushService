@@ -21,7 +21,7 @@
 //#define UTSDKAppKey  @"nI_ZnFmSSA-cE5tpVcXmuQ"
 
 //阿里云
-#define CloudPushKey    @"23522533"
-#define CloudPushSecret @"ab487239a37a1731084fa4c83a771988"
+#define CloudPushKey    @"23624861"
+#define CloudPushSecret @"f4add99fd8b529f3afc18d0548d4959c"
 
 #endif /* PushApiKey_h */
