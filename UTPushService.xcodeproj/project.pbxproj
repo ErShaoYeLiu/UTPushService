@@ -15,6 +15,14 @@
 		E42FD1691E49705200354C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42FD1671E49705200354C07 /* LaunchScreen.storyboard */; };
 		E42FD1741E49705200354C07 /* UTPushServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FD1731E49705200354C07 /* UTPushServiceTests.m */; };
 		E42FD17F1E49705200354C07 /* UTPushServiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FD17E1E49705200354C07 /* UTPushServiceUITests.m */; };
+		E42FD1981E498F4800354C07 /* AlicloudUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1951E498F4800354C07 /* AlicloudUtils.framework */; };
+		E42FD1991E498F4800354C07 /* CloudPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1961E498F4800354C07 /* CloudPushSDK.framework */; };
+		E42FD19A1E498F4800354C07 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1971E498F4800354C07 /* UTDID.framework */; };
+		E42FD19D1E498FB100354C07 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD19C1E498FB100354C07 /* libz.tbd */; };
+		E42FD19F1E498FC100354C07 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD19E1E498FC100354C07 /* libresolv.tbd */; };
+		E42FD1A11E498FDB00354C07 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1A01E498FDB00354C07 /* CoreTelephony.framework */; };
+		E42FD1A31E498FEA00354C07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1A21E498FEA00354C07 /* SystemConfiguration.framework */; };
+		E42FD1A61E49909C00354C07 /* UTPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FD1A51E49909C00354C07 /* UTPushManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,16 @@
 		E42FD17A1E49705200354C07 /* UTPushServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UTPushServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42FD17E1E49705200354C07 /* UTPushServiceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTPushServiceUITests.m; sourceTree = "<group>"; };
 		E42FD1801E49705200354C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E42FD1951E498F4800354C07 /* AlicloudUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlicloudUtils.framework; sourceTree = "<group>"; };
+		E42FD1961E498F4800354C07 /* CloudPushSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudPushSDK.framework; sourceTree = "<group>"; };
+		E42FD1971E498F4800354C07 /* UTDID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UTDID.framework; sourceTree = "<group>"; };
+		E42FD19C1E498FB100354C07 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E42FD19E1E498FC100354C07 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		E42FD1A01E498FDB00354C07 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E42FD1A21E498FEA00354C07 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E42FD1A41E49909C00354C07 /* UTPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPushManager.h; sourceTree = "<group>"; };
+		E42FD1A51E49909C00354C07 /* UTPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPushManager.m; sourceTree = "<group>"; };
+		E42FD1A71E4990D500354C07 /* PushApiKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushApiKey.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E42FD1A31E498FEA00354C07 /* SystemConfiguration.framework in Frameworks */,
+				E42FD1A11E498FDB00354C07 /* CoreTelephony.framework in Frameworks */,
+				E42FD19F1E498FC100354C07 /* libresolv.tbd in Frameworks */,
+				E42FD19D1E498FB100354C07 /* libz.tbd in Frameworks */,
+				E42FD1981E498F4800354C07 /* AlicloudUtils.framework in Frameworks */,
+				E42FD1991E498F4800354C07 /* CloudPushSDK.framework in Frameworks */,
+				E42FD19A1E498F4800354C07 /* UTDID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +110,7 @@
 				E42FD1721E49705200354C07 /* UTPushServiceTests */,
 				E42FD17D1E49705200354C07 /* UTPushServiceUITests */,
 				E42FD1571E49705200354C07 /* Products */,
+				E42FD19B1E498FB100354C07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +127,13 @@
 		E42FD1581E49705200354C07 /* UTPushService */ = {
 			isa = PBXGroup;
 			children = (
+				E42FD18E1E498E9000354C07 /* others */,
+				E42FD18C1E498E6E00354C07 /* aliyunPushSDk */,
+				E42FD18D1E498E6E00354C07 /* UTPush */,
 				E42FD15C1E49705200354C07 /* AppDelegate.h */,
 				E42FD15D1E49705200354C07 /* AppDelegate.m */,
 				E42FD15F1E49705200354C07 /* ViewController.h */,
 				E42FD1601E49705200354C07 /* ViewController.m */,
-				E42FD1621E49705200354C07 /* Main.storyboard */,
-				E42FD1651E49705200354C07 /* Assets.xcassets */,
-				E42FD1671E49705200354C07 /* LaunchScreen.storyboard */,
-				E42FD16A1E49705200354C07 /* Info.plist */,
 				E42FD1591E49705200354C07 /* Supporting Files */,
 			);
 			path = UTPushService;
@@ -117,6 +142,10 @@
 		E42FD1591E49705200354C07 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E42FD1621E49705200354C07 /* Main.storyboard */,
+				E42FD1651E49705200354C07 /* Assets.xcassets */,
+				E42FD1671E49705200354C07 /* LaunchScreen.storyboard */,
+				E42FD16A1E49705200354C07 /* Info.plist */,
 				E42FD15A1E49705200354C07 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +167,44 @@
 				E42FD1801E49705200354C07 /* Info.plist */,
 			);
 			path = UTPushServiceUITests;
+			sourceTree = "<group>";
+		};
+		E42FD18C1E498E6E00354C07 /* aliyunPushSDk */ = {
+			isa = PBXGroup;
+			children = (
+				E42FD1951E498F4800354C07 /* AlicloudUtils.framework */,
+				E42FD1961E498F4800354C07 /* CloudPushSDK.framework */,
+				E42FD1971E498F4800354C07 /* UTDID.framework */,
+			);
+			path = aliyunPushSDk;
+			sourceTree = "<group>";
+		};
+		E42FD18D1E498E6E00354C07 /* UTPush */ = {
+			isa = PBXGroup;
+			children = (
+				E42FD1A41E49909C00354C07 /* UTPushManager.h */,
+				E42FD1A51E49909C00354C07 /* UTPushManager.m */,
+				E42FD1A71E4990D500354C07 /* PushApiKey.h */,
+			);
+			path = UTPush;
+			sourceTree = "<group>";
+		};
+		E42FD18E1E498E9000354C07 /* others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		E42FD19B1E498FB100354C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E42FD1A21E498FEA00354C07 /* SystemConfiguration.framework */,
+				E42FD1A01E498FDB00354C07 /* CoreTelephony.framework */,
+				E42FD19E1E498FC100354C07 /* libresolv.tbd */,
+				E42FD19C1E498FB100354C07 /* libz.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +342,7 @@
 			files = (
 				E42FD1611E49705200354C07 /* ViewController.m in Sources */,
 				E42FD15E1E49705200354C07 /* AppDelegate.m in Sources */,
+				E42FD1A61E49909C00354C07 /* UTPushManager.m in Sources */,
 				E42FD15B1E49705200354C07 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +492,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UTPushService/aliyunPushSDk",
+				);
 				INFOPLIST_FILE = UTPushService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.utsoft.UTPushService;
@@ -435,6 +507,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UTPushService/aliyunPushSDk",
+				);
 				INFOPLIST_FILE = UTPushService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.utsoft.UTPushService;
@@ -507,6 +583,7 @@
 				E42FD1851E49705200354C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E42FD1861E49705200354C07 /* Build configuration list for PBXNativeTarget "UTPushServiceTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +592,7 @@
 				E42FD1881E49705200354C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E42FD1891E49705200354C07 /* Build configuration list for PBXNativeTarget "UTPushServiceUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +601,7 @@
 				E42FD18B1E49705200354C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
