@@ -23,6 +23,20 @@
 		E42FD1A11E498FDB00354C07 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1A01E498FDB00354C07 /* CoreTelephony.framework */; };
 		E42FD1A31E498FEA00354C07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1A21E498FEA00354C07 /* SystemConfiguration.framework */; };
 		E42FD1A61E49909C00354C07 /* UTPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FD1A51E49909C00354C07 /* UTPushManager.m */; };
+		E42FD1AA1E49B22200354C07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FD1601E49705200354C07 /* ViewController.m */; };
+		E42FD1AB1E49B22200354C07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FD15D1E49705200354C07 /* AppDelegate.m */; };
+		E42FD1AC1E49B22200354C07 /* UTPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FD1A51E49909C00354C07 /* UTPushManager.m */; };
+		E42FD1AD1E49B22200354C07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FD15A1E49705200354C07 /* main.m */; };
+		E42FD1AF1E49B22200354C07 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1A21E498FEA00354C07 /* SystemConfiguration.framework */; };
+		E42FD1B01E49B22200354C07 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1A01E498FDB00354C07 /* CoreTelephony.framework */; };
+		E42FD1B11E49B22200354C07 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD19E1E498FC100354C07 /* libresolv.tbd */; };
+		E42FD1B21E49B22200354C07 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD19C1E498FB100354C07 /* libz.tbd */; };
+		E42FD1B31E49B22200354C07 /* AlicloudUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1951E498F4800354C07 /* AlicloudUtils.framework */; };
+		E42FD1B41E49B22200354C07 /* CloudPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1961E498F4800354C07 /* CloudPushSDK.framework */; };
+		E42FD1B51E49B22200354C07 /* UTDID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42FD1971E498F4800354C07 /* UTDID.framework */; };
+		E42FD1B71E49B22200354C07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42FD1671E49705200354C07 /* LaunchScreen.storyboard */; };
+		E42FD1B81E49B22200354C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42FD1651E49705200354C07 /* Assets.xcassets */; };
+		E42FD1B91E49B22200354C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42FD1621E49705200354C07 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +83,8 @@
 		E42FD1A41E49909C00354C07 /* UTPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPushManager.h; sourceTree = "<group>"; };
 		E42FD1A51E49909C00354C07 /* UTPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPushManager.m; sourceTree = "<group>"; };
 		E42FD1A71E4990D500354C07 /* PushApiKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushApiKey.h; sourceTree = "<group>"; };
+		E42FD1BD1E49B22200354C07 /* UTPushService copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UTPushService copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42FD1BE1E49B22200354C07 /* UTPushService copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "UTPushService copy-Info.plist"; path = "/Users/yons/Desktop/刘涛UTOUU工作文件夹/公司正式项目/push/UTPushService copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E42FD1AE1E49B22200354C07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42FD1AF1E49B22200354C07 /* SystemConfiguration.framework in Frameworks */,
+				E42FD1B01E49B22200354C07 /* CoreTelephony.framework in Frameworks */,
+				E42FD1B11E49B22200354C07 /* libresolv.tbd in Frameworks */,
+				E42FD1B21E49B22200354C07 /* libz.tbd in Frameworks */,
+				E42FD1B31E49B22200354C07 /* AlicloudUtils.framework in Frameworks */,
+				E42FD1B41E49B22200354C07 /* CloudPushSDK.framework in Frameworks */,
+				E42FD1B51E49B22200354C07 /* UTDID.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,6 +141,7 @@
 				E42FD17D1E49705200354C07 /* UTPushServiceUITests */,
 				E42FD1571E49705200354C07 /* Products */,
 				E42FD19B1E498FB100354C07 /* Frameworks */,
+				E42FD1BE1E49B22200354C07 /* UTPushService copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +151,7 @@
 				E42FD1561E49705200354C07 /* UTPushService.app */,
 				E42FD16F1E49705200354C07 /* UTPushServiceTests.xctest */,
 				E42FD17A1E49705200354C07 /* UTPushServiceUITests.xctest */,
+				E42FD1BD1E49B22200354C07 /* UTPushService copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,6 +295,23 @@
 			productReference = E42FD17A1E49705200354C07 /* UTPushServiceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E42FD1A81E49B22200354C07 /* UTPushService copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E42FD1BA1E49B22200354C07 /* Build configuration list for PBXNativeTarget "UTPushService copy" */;
+			buildPhases = (
+				E42FD1A91E49B22200354C07 /* Sources */,
+				E42FD1AE1E49B22200354C07 /* Frameworks */,
+				E42FD1B61E49B22200354C07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UTPushService copy";
+			productName = UTPushService;
+			productReference = E42FD1BD1E49B22200354C07 /* UTPushService copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -274,7 +323,8 @@
 				TargetAttributes = {
 					E42FD1551E49705200354C07 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = L77H3BWWS4;
+						ProvisioningStyle = Manual;
 					};
 					E42FD16E1E49705200354C07 = {
 						CreatedOnToolsVersion = 8.1;
@@ -285,6 +335,9 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E42FD1551E49705200354C07;
+					};
+					E42FD1A81E49B22200354C07 = {
+						DevelopmentTeam = L77H3BWWS4;
 					};
 				};
 			};
@@ -304,6 +357,7 @@
 				E42FD1551E49705200354C07 /* UTPushService */,
 				E42FD16E1E49705200354C07 /* UTPushServiceTests */,
 				E42FD1791E49705200354C07 /* UTPushServiceUITests */,
+				E42FD1A81E49B22200354C07 /* UTPushService copy */,
 			);
 		};
 /* End PBXProject section */
@@ -330,6 +384,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42FD1B61E49B22200354C07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42FD1B71E49B22200354C07 /* LaunchScreen.storyboard in Resources */,
+				E42FD1B81E49B22200354C07 /* Assets.xcassets in Resources */,
+				E42FD1B91E49B22200354C07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +424,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E42FD17F1E49705200354C07 /* UTPushServiceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42FD1A91E49B22200354C07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E42FD1AA1E49B22200354C07 /* ViewController.m in Sources */,
+				E42FD1AB1E49B22200354C07 /* AppDelegate.m in Sources */,
+				E42FD1AC1E49B22200354C07 /* UTPushManager.m in Sources */,
+				E42FD1AD1E49B22200354C07 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +494,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gang Gu (S7MWHCW9A8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gang Gu (S7MWHCW9A8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -441,6 +517,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1eecdbbc-6aa4-40b1-9d54-33a9ab138ef4";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -467,7 +544,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gang Gu (S7MWHCW9A8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gang Gu (S7MWHCW9A8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -482,6 +560,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "1eecdbbc-6aa4-40b1-9d54-33a9ab138ef4";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -492,14 +571,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gu Gang (ASW792KA77)";
+				DEVELOPMENT_TEAM = L77H3BWWS4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UTPushService/aliyunPushSDk",
 				);
 				INFOPLIST_FILE = UTPushService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.utsoft.UTPushService;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.utsoft.uhoo.store;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1eecdbbc-6aa4-40b1-9d54-33a9ab138ef4";
+				PROVISIONING_PROFILE_SPECIFIER = Uhoo_dev;
 			};
 			name = Debug;
 		};
@@ -507,14 +591,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gu Gang (ASW792KA77)";
+				DEVELOPMENT_TEAM = L77H3BWWS4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UTPushService/aliyunPushSDk",
 				);
 				INFOPLIST_FILE = UTPushService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.utsoft.UTPushService;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.utsoft.uhoo.store;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1eecdbbc-6aa4-40b1-9d54-33a9ab138ef4";
+				PROVISIONING_PROFILE_SPECIFIER = Uhoo_dev;
 			};
 			name = Release;
 		};
@@ -564,6 +653,46 @@
 			};
 			name = Release;
 		};
+		E42FD1BB1E49B22200354C07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gu Gang (ASW792KA77)";
+				DEVELOPMENT_TEAM = L77H3BWWS4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UTPushService/aliyunPushSDk",
+				);
+				INFOPLIST_FILE = "UTPushService copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.utsoft.UTPushService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1eecdbbc-6aa4-40b1-9d54-33a9ab138ef4";
+				PROVISIONING_PROFILE_SPECIFIER = Uhoo_dev;
+			};
+			name = Debug;
+		};
+		E42FD1BC1E49B22200354C07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gu Gang (ASW792KA77)";
+				DEVELOPMENT_TEAM = L77H3BWWS4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UTPushService/aliyunPushSDk",
+				);
+				INFOPLIST_FILE = "UTPushService copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.utsoft.UTPushService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1eecdbbc-6aa4-40b1-9d54-33a9ab138ef4";
+				PROVISIONING_PROFILE_SPECIFIER = Uhoo_dev;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +728,15 @@
 			buildConfigurations = (
 				E42FD18A1E49705200354C07 /* Debug */,
 				E42FD18B1E49705200354C07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E42FD1BA1E49B22200354C07 /* Build configuration list for PBXNativeTarget "UTPushService copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E42FD1BB1E49B22200354C07 /* Debug */,
+				E42FD1BC1E49B22200354C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

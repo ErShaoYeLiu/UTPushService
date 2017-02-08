@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>UTPushService copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>UTPushService.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>E42FD1791E49705200354C07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E42FD1A81E49B22200354C07</key>
 		<dict>
 			<key>primary</key>
 			<true/>

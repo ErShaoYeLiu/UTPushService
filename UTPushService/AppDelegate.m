@@ -54,6 +54,7 @@
  *  苹果推送注册成功回调，将苹果返回的deviceToken上传到CloudPush服务器
  */
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
     [CloudPushSDK registerDevice:deviceToken withCallback:^(CloudPushCallbackResult *res) {
         if (res.success) {
             NSLog(@"Register deviceToken success.");
