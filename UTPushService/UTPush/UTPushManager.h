@@ -20,7 +20,12 @@
  *  注册苹果推送，获取deviceToken用于推送
  */
 + (void)UTregisterAPNS:(UIApplication *)application;
-
+/**
+ 初始化SDK
+ 
+ @param launchOptions didfinish里面的参数
+ */
++ (void)UTinitCloudPush:(NSDictionary *)launchOptions;
 /**
  *  打开日志推送的日志 建议上线之后关闭
  */
