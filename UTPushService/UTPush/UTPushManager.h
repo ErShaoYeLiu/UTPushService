@@ -127,5 +127,11 @@
  */
 + (void)UTregisterDevice:(NSData *)deviceToken
             withCallback:(CallbackHandler)callback;
+/**
+ 上报“通知点击事件”ACK到推送服务器；
+ 
+ @param userInfo 通知payload
+ */
++ (void)UTsendNotificationAck:(NSDictionary *)userInfo;
 
 @end

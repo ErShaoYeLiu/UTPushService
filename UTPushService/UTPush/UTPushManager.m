@@ -265,7 +265,7 @@
         }];
 }
 
-#pragma mark - 消息处理
+#pragma mark - 消息接收监听
 /**
  *    注册推送消息到来监听
  */
@@ -286,5 +286,70 @@
     NSString *body = [[NSString alloc] initWithData:message.body encoding:NSUTF8StringEncoding];
     NSLog(@"Receive message title: %@, content: %@.", title, body);
 }
+#pragma mark - 通知打开监听
 
+/**
+ *  处理iOS 10通知(iOS 10+)
+ */
+- (void)handleiOS10Notification:(UNNotification *)notification {
+    UNNotificationRequest *request = notification.request;
+    UNNotificationContent *content = request.content;
+    NSDictionary *userInfo = content.userInfo;
+    // 通知时间
+    NSDate *noticeDate = notification.date;
+    // 标题
+    NSString *title = content.title;
+    // 副标题
+    NSString *subtitle = content.subtitle;
+    // 内容
+    NSString *body = content.body;
+    // 角标
+    int badge = [content.badge intValue];
+    // 取得通知自定义字段内容，例：获取key为"Extras"的内容
+    NSString *extras = [userInfo valueForKey:@"Extras"];
+    // 通知打开回执上报
+    [CloudPushSDK sendNotificationAck:userInfo];
+    NSLog(@"Notification, date: %@, title: %@, subtitle: %@, body: %@, badge: %d, extras: %@.", noticeDate, title, subtitle, body, badge, extras);
+}
+/**
+ *  App处于前台时收到通知(iOS 10+)
+ */
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
+    NSLog(@"Receive a notification in foregound.");
+    // 处理iOS 10通知相关字段信息
+    [self handleiOS10Notification:notification];
+    // 通知不弹出
+    //completionHandler(UNNotificationPresentationOptionNone);
+    // 通知弹出，且带有声音、内容和角标（App处于前台时不建议弹出通知）
+    completionHandler(UNNotificationPresentationOptionSound | UNNotificationPresentationOptionAlert | UNNotificationPresentationOptionBadge);
+}
+
+
+/**
+ *  触发通知动作时回调，比如点击、删除通知和点击自定义action(iOS 10+)
+ */
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler {
+    NSString *userAction = response.actionIdentifier;
+    // 点击通知打开
+    if ([userAction isEqualToString:UNNotificationDefaultActionIdentifier]) {
+        NSLog(@"User opened the notification.");
+        // 处理iOS 10通知，并上报通知打开回执
+        [self handleiOS10Notification:response.notification];
+    }
+    // 通知dismiss，category创建时传入UNNotificationCategoryOptionCustomDismissAction才可以触发
+    if ([userAction isEqualToString:UNNotificationDismissActionIdentifier]) {
+        NSLog(@"User dismissed the notification.");
+    }
+    NSString *customAction1 = @"action1";
+    NSString *customAction2 = @"action2";
+    // 点击用户自定义Action1
+    if ([userAction isEqualToString:customAction1]) {
+        NSLog(@"User custom action1.");
+    }
+    // 点击用户自定义Action2
+    if ([userAction isEqualToString:customAction2]) {
+        NSLog(@"User custom action2.");
+    }
+    completionHandler();
+}
 @end
